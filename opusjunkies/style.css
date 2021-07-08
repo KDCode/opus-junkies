@@ -21,6 +21,8 @@
     --dark-gray: #999;
     --btn-primary: #421C52;
     --btn-secondary: #723C78;
+    --btn:linear-gradient(45deg,#704872,#3d1a64);
+
 
 
     --red: hsl(0, 78%, 62%);
@@ -92,8 +94,8 @@ body {
 }
 
 .btn {
-    background: var(--btn-primary);
-    color: white;
+  background:linear-gradient(45deg,#704872,#3d1a64);
+  color: white;
     outline: none;
     padding: 8px 20px;
     font-size: 14px;
@@ -104,7 +106,7 @@ body {
 }
 
 .btn:hover {
-    background: var(--btn-secondary);
+  background:linear-gradient(45deg,#3d1a64,#704872);
 }
 
 
@@ -417,7 +419,7 @@ nav ul.dropdown-list {
   }
   .button input{
     padding-left: 0;
-    background: var(--primary-dark);
+    background:linear-gradient(45deg,#704872,#3d1a64);
     color: #fff;
     border: none;
     font-size: 20px;
@@ -426,14 +428,14 @@ nav ul.dropdown-list {
     transition: all 0.3s linear;
   }
   .button input:hover{
-    background: var(--dark);
+    background:linear-gradient(45deg,#3d1a64,#704872);
   }
   form .sign_up{
     text-align: center;
     margin-top: 25px;
   }
   .sign_up a{
-    color: var(--pure);
+    color: var(--primary-dark);
   }
   form a{
     text-decoration: none;
