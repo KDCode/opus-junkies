@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 1rem;
+    background: url('bubble.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root{
+    --primary: #4F2361;
+    --secondary:#7F5281;
+    --primary-light:#583666b7;
+    --primary-dark:#3b1849;
+    --btn-primary: #421C52;
+    --btn-secondary: #723C78;
+}
+.hero{   
+    display: flex;
+    align-items: center;     
+    justify-content: center;
+    
+
+}
+
+.hero__text-block{
+    background: white;
+}
+.hero__image-block{
+    display: none;
+}
+@media(min-width:700px){
+    
+    .hero__text-block h1{
+        width: 60%;
+    }
+    body{
+        margin: 4rem 10rem;
+
+    }
+    
+}
+
+@media(min-width:992px){
+    body{
+        margin: 5rem 15rem;
+
+    }
+    .hero{
+        background: var(--dark);
+        min-height: auto;
+        margin-top: 8%;
+        height: 70vh;       
+    }
+    .hero__text-block{
+        width: 50%;
+        height: 100%;
+
+    }
+    
+    .hero__image-block{
+        display: block;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background:linear-gradient(45deg,#704872,#3d1a64);
+    }
+    .hero__image-block h3{
+        color: white;
+        font-weight: 500;
+    }
+    .hero__image-block p{
+        color: white;
+        padding: 1rem;
+        font-weight: 400;
+    }   
+}
+@media(min-width:1192px){
+    
+    html{
+        font-size: 20px;
+    }
+    
+}
+@media(min-width:1192px){
+    
+  .main_div{
+    width: 100%;
+  }
+}
+
+.main_div{
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+  }
+  .main_div .social_icons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+  }
+  .social_icons a{
+    display: block;
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s linear;
+  }
+  .social_icons a span{
+    margin-left: 5px;
+    font-size: 18px;
+  }
+  .social_icons a:first-child{
+    margin-right: 5px;
+    background: #4267B2;
+  }
+  .social_icons a:first-child:hover{
+    background: #375695;
+  }
+  .social_icons a:last-child{
+    margin-left: 5px;
+    background: #1DA1F2;
+  }
+  .social_icons a:last-child:hover{
+    background: #0d8bd9;
+  }
+  form {
+    margin-top: 25px;
+  }
+  form .input_box{
+    height: 50px;
+    width: 90%;
+    position: relative;
+    margin-top: 15px;
+  }
+  .input_box input{
+    height: 100%;
+    width: 70%;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--primary-light);
+    border-radius: 5px;
+    padding-left: 45px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+  .input_box .icon{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: grey;
+  }
+  .input_box ::placeholder{
+      color: var(--primary);
+  } 
+  
+  .input_box input:focus{
+    border-color: var(--primary-dark);
+  }
+  .btn_box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .btn {
+    background:linear-gradient(45deg,#704872,#3d1a64);
+    color: white;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 3rem;
+    padding:0.4rem 0.8rem ;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all .5s ease-in-out;
+}
+
+.btn:hover {
+    background:linear-gradient(45deg,#3d1a64,#704872);
+}
+
+  /* background:linear-gradient(45deg,#704872,#3d1a64); */
+  /* background:linear-gradient(45deg,#ff0081,#6827b0) */
+  
+form .sign_up{
+    text-align: center;
+    margin-top: 25px;
+    width: 70%;
+  }
+  .sign_up a{
+    color: var(--pure);
+  }
+  form a{
+    text-decoration: none;
+  }
+  form a:hover{
+    text-decoration: underline;
+  }
